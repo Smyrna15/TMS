@@ -1,0 +1,11 @@
+{
+  "servicelistVersion": 6,
+  "Data": [
+    {
+      "Value": "2",
+      "key": "BillCount"
+    }
+  ],
+  "billingAccount": "3739460",
+  "version": 36
+}

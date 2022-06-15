@@ -1,0 +1,31 @@
+
+################################################################################################################################################
+Starting Execution:	[13 out of 30] test cases in the current suite
+Test Method:		[apis.ahlymomknapis.checksports]
+################################################################################################################################################
+[ReportManager] Response status code: [200], status line: [HTTP/1.1 200 OK] @15-06-2022 20:25:11.0463 PM
+[ReportManager] Assertion Passed: Evaluating the actual response status code against the expected one... @15-06-2022 20:25:11.0464 PM
+[ReportManager] Assertion [ValidateEquals] PASSED. Expected [200] and Actual [200]. Comparison Type [EQUALS]. Validation Type [POSITIVE]. @15-06-2022 20:25:11.0465 PM
+[ReportManager] API Action [PerformRequest] successfully performed. With the following test data [Request Type: "POST" | Target Status Code: "200" | Service URL: "http://164.160.104.66:8080/api/accounts/6/authenticate" | Content Type: "application/json" | Response Time: "408ms"]. @15-06-2022 20:25:11.0513 PM
+[ReportManager] Successfully created attachment [API Request - JSON Body] @15-06-2022 20:25:11.0515 PM
+[ReportManager] Successfully created attachment [API Response - JSON Body] @15-06-2022 20:25:11.0518 PM
+[ReportManager] API Action [GetResponseJSONValue] successfully performed. With the following test data [Token]. @15-06-2022 20:25:11.0556 PM
+[ReportManager] Response status code: [200], status line: [HTTP/1.1 200 OK] @15-06-2022 20:25:11.0772 PM
+[ReportManager] Assertion Passed: Evaluating the actual response status code against the expected one... @15-06-2022 20:25:11.0772 PM
+[ReportManager] Assertion [ValidateEquals] PASSED. Expected [200] and Actual [200]. Comparison Type [EQUALS]. Validation Type [POSITIVE]. @15-06-2022 20:25:11.0773 PM
+[ReportManager] API Action [PerformRequest] successfully performed. With the following test data [Request Type: "POST" | Target Status Code: "200" | Service URL: "http://164.160.104.66:8080/api/services/389/inquiry" | Content Type: "application/json" | Response Time: "209ms"]. @15-06-2022 20:25:11.0798 PM
+[ReportManager] Successfully created attachment [API Request - JSON Body] @15-06-2022 20:25:11.0798 PM
+[ReportManager] Successfully created attachment [API Response - JSON Body] @15-06-2022 20:25:11.0802 PM
+[ReportManager] API Action [GetResponseJSONValue] successfully performed. With the following test data [Brn]. @15-06-2022 20:25:11.0818 PM
+[ReportManager] Response status code: [200], status line: [HTTP/1.1 200 OK] @15-06-2022 20:25:12.0074 PM
+[ReportManager] Assertion Passed: Evaluating the actual response status code against the expected one... @15-06-2022 20:25:12.0074 PM
+[ReportManager] Assertion [ValidateEquals] PASSED. Expected [200] and Actual [200]. Comparison Type [EQUALS]. Validation Type [POSITIVE]. @15-06-2022 20:25:12.0074 PM
+[ReportManager] API Action [PerformRequest] successfully performed. With the following test data [Request Type: "POST" | Target Status Code: "200" | Service URL: "http://164.160.104.66:8080/api/services/389/fees" | Content Type: "application/json" | Response Time: "253ms"]. @15-06-2022 20:25:12.0087 PM
+[ReportManager] Successfully created attachment [API Request - JSON Body] @15-06-2022 20:25:12.0088 PM
+[ReportManager] Successfully created attachment [API Response - JSON Body] @15-06-2022 20:25:12.0092 PM
+[ReportManager] Response status code: [200], status line: [HTTP/1.1 200 OK] @15-06-2022 20:25:12.0684 PM
+[ReportManager] Assertion Passed: Evaluating the actual response status code against the expected one... @15-06-2022 20:25:12.0684 PM
+[ReportManager] Assertion [ValidateEquals] PASSED. Expected [200] and Actual [200]. Comparison Type [EQUALS]. Validation Type [POSITIVE]. @15-06-2022 20:25:12.0684 PM
+[ReportManager] API Action [PerformRequest] successfully performed. With the following test data [Request Type: "POST" | Target Status Code: "200" | Service URL: "http://164.160.104.66:8080/api/services/389/payment" | Content Type: "application/json" | Response Time: "589ms"]. @15-06-2022 20:25:12.0717 PM
+[ReportManager] Successfully created attachment [API Request - JSON Body] @15-06-2022 20:25:12.0722 PM
+[ReportManager] Successfully created attachment [API Response - JSON Body] @15-06-2022 20:25:12.0724 PM

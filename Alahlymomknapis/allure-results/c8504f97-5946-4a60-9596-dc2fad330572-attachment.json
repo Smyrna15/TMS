@@ -1,0 +1,15 @@
+{
+  "AccountId": 6,
+  "Message": "????? ?????",
+  "ServerDate": "2022-06-15T20:22:52",
+  "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjExMXw2fDE5Ni4xNTEuMjQ0LjI1MnwyMjMwNyIsIm5iZiI6MTY1NTMxNzM3MiwiZXhwIjoxNjU1NTc2NTcyLCJpYXQiOjE2NTUzMTczNzJ9.N3VcPnIv7ckBzYkUITKnMlIvrifIbB67ruzXuVi2HM4",
+  "Code": 200,
+  "LocalDate": "2021-01-13T13:16:20",
+  "AvailableBalance": 0.0,
+  "Version": "34",
+  "ID": 0,
+  "Balance": 0.0,
+  "AccountName": "IT",
+  "AcountType": 7,
+  "ServiceListVersion": "81"
+}

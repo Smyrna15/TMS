@@ -1,0 +1,14 @@
+{
+  "servicelistVersion": 6,
+  "Data": [
+    {
+      "Value": "CardData",
+      "key": "CardData"
+    },
+    {
+      "Value": "CardData",
+      "key": "CardData"
+    }
+  ],
+  "version": 36
+}

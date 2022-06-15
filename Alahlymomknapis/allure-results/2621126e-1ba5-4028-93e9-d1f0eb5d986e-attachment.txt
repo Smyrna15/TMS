@@ -1,0 +1,15 @@
+
+################################################################################################################################################
+Starting Execution:	[18 out of 30] test cases in the current suite
+Test Method:		[apis.ahlymomknapis.extraqouta]
+################################################################################################################################################
+[ReportManager] Response status code: [200], status line: [HTTP/1.1 200 OK] @15-06-2022 20:25:20.0709 PM
+[ReportManager] Assertion Passed: Evaluating the actual response status code against the expected one... @15-06-2022 20:25:20.0710 PM
+[ReportManager] Assertion [ValidateEquals] PASSED. Expected [200] and Actual [200]. Comparison Type [EQUALS]. Validation Type [POSITIVE]. @15-06-2022 20:25:20.0710 PM
+[ReportManager] API Action [PerformRequest] successfully performed. With the following test data [Request Type: "POST" | Target Status Code: "200" | Service URL: "http://164.160.104.66:8080/api/accounts/6/authenticate" | Content Type: "application/json" | Response Time: "707ms"]. @15-06-2022 20:25:20.0739 PM
+[ReportManager] Successfully created attachment [API Request - JSON Body] @15-06-2022 20:25:20.0743 PM
+[ReportManager] Successfully created attachment [API Response - JSON Body] @15-06-2022 20:25:20.0745 PM
+[ReportManager] API Action [GetResponseJSONValue] successfully performed. With the following test data [Token]. @15-06-2022 20:25:20.0779 PM
+[ReportManager] An Exception Occured with this Message: Read timed out. @15-06-2022 20:25:50.0879 PM
+[ReportManager] Successfully created attachment [Exception Stack Trace - java.net.SocketTimeoutException] @15-06-2022 20:25:50.0883 PM
+[ReportManager] API Action [PerformRequest] failed. With the following test data [http://164.160.104.66:8080/api/services/488/inquiry]. @15-06-2022 20:25:50.0885 PM

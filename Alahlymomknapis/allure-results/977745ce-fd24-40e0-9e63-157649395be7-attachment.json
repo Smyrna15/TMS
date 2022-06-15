@@ -1,0 +1,20 @@
+{
+  "Message": "????? ?????",
+  "Data": [],
+  "Invoices": [
+    {
+      "Amount": 657.09,
+      "Data": [
+        {
+          "Value": "657.09",
+          "Key": "?????? ???????"
+        }
+      ],
+      "Sequence": 1,
+      "openAmount": 0.0
+    }
+  ],
+  "TotalAmount": 657.09,
+  "Code": 200,
+  "Brn": 92935
+}

@@ -1,0 +1,13 @@
+{
+  "amount": 10.0,
+  "BillingAccount": "0862352989",
+  "servicelistVersion": 10,
+  "Data": [
+    {
+      "Value": "1",
+      "key": "Sequence"
+    }
+  ],
+  "version": 6,
+  "Brn": "0"
+}
