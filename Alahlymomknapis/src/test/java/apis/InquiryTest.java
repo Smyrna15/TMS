@@ -22,6 +22,6 @@ public class InquiryTest {
 //        action
         Response response=  eligibleCustomer.inquiry(service, InquiryRepo.get(line));
 //        assert values in the response
-
+response.prettyPrint();
     }
 }

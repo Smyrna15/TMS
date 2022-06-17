@@ -24,6 +24,7 @@ public class FeeTest {
 //        action
         Response resp = eligibleCustomer.getFees(service, FeeRepo.get(fee,brn));
 //        assert values in the response
+        resp.prettyPrint();
     }
 
 
