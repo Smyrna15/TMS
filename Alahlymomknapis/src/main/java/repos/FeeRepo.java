@@ -8,7 +8,7 @@ import java.util.Map;
 public class FeeRepo {
    static Map<String, FeesBody> feeTestData = new HashMap<>()
     {{
-        feeTestData.put("fee1",new FeesBody(450.7, "36", "6",null)); //"en"
+        put("fee1",new FeesBody(450.7, "36", "6",null)); //"en"
     }
     };
     public static FeesBody get(String feeLabel, int brn)

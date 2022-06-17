@@ -8,6 +8,6 @@ public class AuthenticationRequest extends PostRequest{
         super("http://164.160.104.66:8080", "/api/accounts/6/authenticate");
     }
     public Response send(Customer body) {
-        return send(body);
+        return super.send(body);
     }
 }

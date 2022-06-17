@@ -9,7 +9,6 @@ import com.shaft.api.RestActions;
 import io.restassured.response.Response;
 import enums.SERVICE;
 
-import java.util.Date;
 
 public class Customer {
 	  @JsonProperty("UserName") 

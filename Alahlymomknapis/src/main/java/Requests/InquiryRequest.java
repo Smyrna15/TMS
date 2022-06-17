@@ -10,6 +10,6 @@ public class InquiryRequest extends PostRequest{
         addToken(token);
     }
     public Response send(InquiryBody body) {
-        return send(body);
+        return super.send(body);
     }
 }

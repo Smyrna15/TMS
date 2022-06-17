@@ -13,7 +13,7 @@ import repos.UserRepo;
 public class FeeTest {
     @DataProvider(name = "fee-provider")
     public Object[][] feeProvider(){
-        return new Object[][] {{SERVICE.ELECTRICITY,"customer1", "inquiry1","fee1" }, {5, 7, 9}};
+        return new Object[][] {{SERVICE.ELECTRICITY,"customer1", LINES.VODAFONE,"fee1" }, {SERVICE.ELECTRICITY,"customer1", LINES.VODAFONE,"fee1" }};
     }
     @Test(dataProvider = "fee-provider")
     public void testFees(SERVICE service,  String user, LINES line, String fee) {

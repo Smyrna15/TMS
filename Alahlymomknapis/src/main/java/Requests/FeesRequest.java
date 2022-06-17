@@ -11,6 +11,6 @@ public class FeesRequest extends PostRequest{
         addToken(token);
     }
     public Response send(FeesBody body) {
-        return send(body);
+        return super.send(body);
     }
 }
