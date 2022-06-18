@@ -21,6 +21,12 @@
 	</repositories>
 	<dependencies>
 		<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.20</version>
+		<scope>provided</scope>
+		</dependency>
+		<dependency>
 			<groupId>io.github.mohabmohie</groupId>
 			<artifactId>SHAFT_ENGINE</artifactId>
 			<version>${shaft_engine.version}</version>

@@ -12,7 +12,7 @@ import repos.UserRepo;
 public class InquiryTest {
     @DataProvider(name = "inquiry-provider")
     public Object[][] inquiryProvider(){
-        return new Object[][] {{SERVICE.ELECTRICITY,"customer1", "inquiry1" }, {5, 7, 9}};
+        return new Object[][] {{SERVICE.ELECTRICITY,"customer1", LINES.VODAFONE }, {SERVICE.ELECTRICITY,"customer1", LINES.VODAFONE }};
     }
 
     @Test(dataProvider = "inquiry-provider")
@@ -22,6 +22,6 @@ public class InquiryTest {
 //        action
         Response response=  eligibleCustomer.inquiry(service, InquiryRepo.get(line));
 //        assert values in the response
-
+response.prettyPrint();
     }
 }

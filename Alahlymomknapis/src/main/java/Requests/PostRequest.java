@@ -12,6 +12,7 @@ public class PostRequest {
     RequestSpecification requestSpecification = RestAssured.given();
 
     public PostRequest(String uri, String endpoint) {
+        this.endpoint=endpoint;
         requestSpecification.baseUri(uri);
         requestSpecification.header("Content-type", "application/json");
     }

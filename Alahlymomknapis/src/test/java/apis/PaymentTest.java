@@ -13,7 +13,7 @@ import repos.UserRepo;
 public class PaymentTest {
     @DataProvider(name = "payment-provider")
     public Object[][] paymentProvider(){
-        return new Object[][] {{SERVICE.ELECTRICITY,"customer1", "inquiry1","payment1" }, {5, 7, 9}};
+        return new Object[][] {{SERVICE.ELECTRICITY,"customer1", LINES.ETISALAT,"payment1" }, {SERVICE.ELECTRICITY,"customer1", LINES.ETISALAT,"payment1" }};
     }
 
 
@@ -27,6 +27,6 @@ public class PaymentTest {
 //        action
         Response resp = eligibleCustomer.pay(service, PaymentRepo.get(payment, brn,billingAccount));
 //        assert values in the response
-
+        resp.prettyPrint();
     }
 }

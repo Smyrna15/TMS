@@ -11,6 +11,6 @@ public class PaymentRequest extends PostRequest{
         addToken(token);
     }
     public Response send(PaymentBody body) {
-        return send(body);
+        return super.send(body);
     }
 }
