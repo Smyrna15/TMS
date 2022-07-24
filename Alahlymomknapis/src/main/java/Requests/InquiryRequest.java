@@ -5,8 +5,8 @@ import models.InquiryBody;
 import enums.SERVICE;
 
 public class InquiryRequest extends PostRequest{
-    public InquiryRequest(SERVICE service, String token) {
-        super("http://164.160.104.66:8080", "/api/services/"+service.getValue()+"/inquiry");
+    public InquiryRequest(String serviceId, String token) {
+        super("http://164.160.104.66:8080", "/api/services/"+serviceId+"/inquiry");
         addToken(token);
     }
     public Response send(InquiryBody body) {

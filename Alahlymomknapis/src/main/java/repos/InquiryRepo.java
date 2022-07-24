@@ -1,6 +1,5 @@
 package repos;
 
-import enums.LINES;
 import models.InquiryBody;
 
 import java.util.HashMap;
@@ -16,8 +15,8 @@ public class InquiryRepo {
 
     }
     };
-    public static InquiryBody get(LINES line)
+    public static InquiryBody get(String line)
     {
-        return  inquiryTestData.get(line.getValue());
+        return  inquiryTestData.get(line);
     }
 }

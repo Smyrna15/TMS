@@ -4,3 +4,4 @@ Alahlymomknapis/*.log
 Alahlymomknapis/allure-results/*
 Alahlymomknapis/target/*
 
+.idea/*

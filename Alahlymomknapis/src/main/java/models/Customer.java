@@ -54,19 +54,19 @@ public class Customer {
 		String token = RestActions.getResponseJSONValue(resp, "Token");
 		return token;
 	}
-	public Response inquiry(SERVICE service, InquiryBody inquiryBody) {
-		InquiryRequest inquiryRequest= new InquiryRequest(service,login());
+	public Response inquiry(String serviceId, InquiryBody inquiryBody) {
+		InquiryRequest inquiryRequest= new InquiryRequest(serviceId,login());
 		return inquiryRequest.send(inquiryBody);
 	}
-	public Integer getBrn(SERVICE service, InquiryBody inquiryBody) {
-		return Integer.valueOf(RestActions.getResponseJSONValue(inquiry(service,inquiryBody), "Brn"));
+	public Integer getBrn(String serviceId, InquiryBody inquiryBody) {
+		return Integer.valueOf(RestActions.getResponseJSONValue(inquiry(serviceId,inquiryBody), "Brn"));
 	}
-	public Response getFees(SERVICE service,FeesBody feesBody) {
-		FeesRequest feesRequest= new FeesRequest(service,login());
+	public Response getFees(String serviceId,FeesBody feesBody) {
+		FeesRequest feesRequest= new FeesRequest(serviceId,login());
 		return feesRequest.send(feesBody);
 	}
-	public Response pay(SERVICE service,PaymentBody paymentBody) {
-		PaymentRequest paymentRequest= new PaymentRequest(service,login());
+	public Response pay(String serviceId,PaymentBody paymentBody) {
+		PaymentRequest paymentRequest= new PaymentRequest(serviceId,login());
 		return paymentRequest.send(paymentBody);
 	}
 }
