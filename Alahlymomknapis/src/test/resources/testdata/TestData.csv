@@ -1,0 +1,5 @@
+service,id,inquiry,user,line ,fee,payment
+VOUCHERS,33,y,customer1,orange_line,fee1,payment1
+VODAFONE_NET,66,n,customer1,vf_line,fee1,payment1
+ORANGE_DSL,60,y,customer1,etsalat_line,fee1,payment1
+ORANGE_RESELLER,61,y,customer1,landline,fee1,payment1

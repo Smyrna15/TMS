@@ -1,6 +1,7 @@
 package apis;
 
-import enums.LINES;
+import DataProviders.ServiceDataProvider;
+import DataReaders.ConverterUtil;
 import io.restassured.response.Response;
 import models.Customer;
 import enums.SERVICE;
@@ -10,22 +11,26 @@ import repos.InquiryRepo;
 import repos.PaymentRepo;
 import repos.UserRepo;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class PaymentTest {
     @DataProvider(name = "payment-provider")
     public Object[][] paymentProvider(){
-        return new Object[][] {{SERVICE.ELECTRICITY,"customer1", LINES.ETISALAT,"payment1" }, {SERVICE.ELECTRICITY,"customer1", LINES.ETISALAT,"payment1" }};
+        ArrayList<String[]> data  = new ServiceDataProvider().getPaymentData();
+        return ConverterUtil.arraylistOfArrayTo2DArray(data);
     }
 
-
     @Test(dataProvider = "payment-provider")
-    public void testPayment(SERVICE service, String user, LINES line, String payment) {
+    public void testPayment(String serviceName ,String serviceNumber ,String user, String line, String payment)
+    {
 //        precondition
         Customer eligibleCustomer = UserRepo.get(user);
         String token  = eligibleCustomer.login();
         String billingAccount= InquiryRepo.get(line).billingAccount;
-        int brn = eligibleCustomer.getBrn(service, InquiryRepo.get(line));
+        int brn = eligibleCustomer.getBrn(serviceNumber, InquiryRepo.get(line));
 //        action
-        Response resp = eligibleCustomer.pay(service, PaymentRepo.get(payment, brn,billingAccount));
+        Response resp = eligibleCustomer.pay(serviceNumber, PaymentRepo.get(payment, brn,billingAccount));
 //        assert values in the response
         resp.prettyPrint();
     }
